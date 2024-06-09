@@ -1,5 +1,6 @@
 import streamlit as st
 
+import data.characters
 import data.targets
 
 st.set_page_config(page_title='SWGOH Test')
@@ -28,5 +29,7 @@ ch: Character = Character(name='R2-D2',
 characters.append(ch)
 st.write(ch.name)
 st.write(ch.factions)
+
+st.write(data.characters.characters)
 
 st.write(data.targets.targets)
